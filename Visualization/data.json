@@ -1,0 +1,34 @@
+{ "name": "Places", 
+    "children": [
+        {"name": "North America",
+            "children": [
+                {"name": "USA", "size": 3000},
+                {"name": "Great White North", "size": 3000},
+                {"name": "Mexico", "size": 3000}
+                        ]
+        },
+        
+        {"name": "South America",
+            "children": [
+                {"name": "Brazil", "size": 3000},
+                {"name": "Chile", "size": 3000}
+                        ]
+        },
+                
+        {"name": "Asia",
+            "children": [
+                {"name": "China", "size": 4000},
+                {"name": "Japan", "size": 3000},
+                {"name": "Mongolia", "size": 3000}
+                        ]
+        },
+        
+        {"name": "Europe",
+            "children": [
+                {"name": "Germany", "size": 3000},
+                {"name": "Spain", "size": 3000},
+                {"name": "England", "size": 3000}
+                        ]
+        }     
+                ]
+    }
