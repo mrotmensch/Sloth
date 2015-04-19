@@ -134,6 +134,8 @@ function tick() {
 //Request extended JSON objects when clicking a clickable node
 function click(d) {
 	$wordClicked = d.word;
+	console.log('This is the click function');
+	console.log(d);
 
 	var jsonURL = 'http://desolate-taiga-6759.herokuapp.com/word/basic/' + $wordClicked;
 	console.log(jsonURL);
