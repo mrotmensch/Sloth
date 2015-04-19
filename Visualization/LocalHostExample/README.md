@@ -1,12 +1,12 @@
-## Dependencies
+# Dependencies
 
-# Python
+## Python
 
 ```sh
 pip install -r requirements.txt
 ```
 
-# JavaScript
+## JavaScript
 
 Node.js
 ```sh
