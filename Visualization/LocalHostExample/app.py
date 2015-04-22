@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify, json
+from flask import Flask, render_template, jsonify, json, request
 
 app = Flask(__name__)
 
@@ -11,6 +11,12 @@ def index():
 @app.route("/data")
 def data():
     return jsonify(json.load(open('data.json')))
+
+@app.route('/_trapClick')
+def trapClick():
+    clickName = request.args.get('target', 'empty', type=str)
+
+    return jsonify(result = clickName + clickName[::-1])
 
 if __name__ == "__main__":
     app.run(debug=True)

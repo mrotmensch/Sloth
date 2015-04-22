@@ -1,11 +1,12 @@
 .node circle {
   cursor: pointer;
   stroke: #3182bd;
-  stroke-width: 1.5px;
+  stroke-width: 0px;
 }
  
 .node text {
   font: 10px sans-serif;
+  font-weight: bold;
   pointer-events: none;
   text-anchor: middle;
 }

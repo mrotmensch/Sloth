@@ -1,7 +1,7 @@
 {
-  "name": "viz example",
+  "name": "_app_boilerplate",
   "version": "0.0.0",
-  "homepage": "https://github.com/mrotmensch/Sloth",
+  "homepage": "https://github.com/realpython/flask-stock-visualizer",
   "authors": [
     "Peter Li <p.li1988@gmail.com>"
   ],
