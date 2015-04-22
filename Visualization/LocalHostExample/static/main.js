@@ -1,11 +1,11 @@
  
-var width = 960,
-    height = 500,
+var width = 1000,
+    height = 700,
     root;
  
 var force = d3.layout.force()
-    .linkDistance(80)
-    .charge(-120)
+    .linkDistance(50)
+    .charge(-500)
     .gravity(.05)
     .size([width, height])
     .on("tick", tick);
@@ -16,13 +16,28 @@ var svg = d3.select("body").append("svg")
  
 var link = svg.selectAll(".link"),
     node = svg.selectAll(".node");
- 
+
 d3.json("data", function(error, json) {
   root = json;
   update();
+  bindNameClick();
 });
- 
+
+
+//======== Start: Bind jQuery to click event ========
+
+//function bindNameClick() {$('svg g.node').bind('dblclick', function() {var name = $(this).context.__data__.name; console.log(name);})};
+
+function bindNameClick() {$('svg g.node').bind('dblclick', function() {var name = $(this).context.__data__.name; $.getJSON('/_trapClick',{target: name}, 
+function(data) {$("#result").text(data.result);}
+)
+})};
+
+//======== End: Bind jQuery to click event ========
+
+
 function update() {
+
   var nodes = flatten(root),
       links = d3.layout.tree().links(nodes);
  
@@ -47,11 +62,13 @@ function update() {
  
   var nodeEnter = node.enter().append("g")
       .attr("class", "node")
-      .on("click", click)
+      //.on("click", click)
+      //.on("click", getName)
       .call(force.drag);
  
   nodeEnter.append("circle")
-      .attr("r", function(d) { return Math.sqrt(d.size) / 10 || 4.5; });
+//      .attr("r", function(d) { return Math.sqrt(d.size) / 1 || 5; });
+      .attr("r", function(d) {return 25;});
  
   nodeEnter.append("text")
       .attr("dy", ".35em")
@@ -70,11 +87,13 @@ function tick() {
   node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
 }
  
-function color(d) {
-  return d._children ? "#3182bd" // collapsed package
-      : d.children ? "#c6dbef" // expanded package
-      : "#fd8d3c"; // leaf node
+
+function color(d,c1,c2) {
+
+  return d.children ? "#2ca02c" // collapsed package
+      : "#c7e9c0";
 }
+
  
 // Toggle children on click.
 function click(d) {
