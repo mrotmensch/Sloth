@@ -12,7 +12,7 @@ def corr(a,b):
     else:
         return 0.001
         
-g, bm = gt.random_graph(100000, 
+g, bm = gt.random_graph(10000000, 
                         lambda: poisson(20), 
                         directed=False,
                         block_membership=lambda: randint(50),
@@ -20,7 +20,7 @@ g, bm = gt.random_graph(100000,
                         
                         
 print(g.num_vertices(), g.num_edges())
-state = gt.minimize_nested_blockmodel_dl(g, deg_corr=True)
+pagerank = graph_tool.centrality.pagerank(g)
 
 
 diff = time.time() - start
@@ -28,7 +28,7 @@ diff = time.time() - start
 nodes = g.num_vertices()
 edges = g.num_edges()
 
-filename = 'undirected_%dkN_%dkE' % (nodes/1000,edges/1000)
+filename = 'pagerank_undirected_%dMN_%dME' % (nodes/1000000,edges/1000000)
 with open(filename+'.txt','w+') as f:
     f.write("test: %d nodes %d edges\n" % (nodes,edges))
 

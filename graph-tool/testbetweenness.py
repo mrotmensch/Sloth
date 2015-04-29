@@ -13,14 +13,14 @@ def corr(a,b):
         return 0.001
         
 g, bm = gt.random_graph(100000, 
-                        lambda: poisson(20), 
+                        lambda: poisson(10), 
                         directed=False,
                         block_membership=lambda: randint(50),
                         vertex_corr=corr)
                         
                         
 print(g.num_vertices(), g.num_edges())
-state = gt.minimize_nested_blockmodel_dl(g, deg_corr=True)
+pagerank = graph_tool.centrality.betweenness(g)
 
 
 diff = time.time() - start
@@ -28,7 +28,7 @@ diff = time.time() - start
 nodes = g.num_vertices()
 edges = g.num_edges()
 
-filename = 'undirected_%dkN_%dkE' % (nodes/1000,edges/1000)
+filename = 'betweenness_undirected_%dkN_%dkE' % (nodes/1000,edges/1000)
 with open(filename+'.txt','w+') as f:
     f.write("test: %d nodes %d edges\n" % (nodes,edges))
 
