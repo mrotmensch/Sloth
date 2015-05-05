@@ -1,5 +1,5 @@
 
-# MapReduce programs for cleaning Wikipedia data
+# MapReduce for cleaning Wikipedia data
 
 
 To clean the data of links between articles use mapper\_pagelinks.py as the mapper and reducer.py as the reducer.
@@ -21,4 +21,10 @@ To examine preprocessed results look at:
 ## For Reducer:
 For both files use reducer.py as the reducer. This is an identity reducer.
 
+To run files locally:
+
+To examine preprocessed results look at:
+
+1. for file corresponding to mapper\_pagelinks.py+reducer.py inspect results\_example\_reducer\_pagelink.txt
+2. for file corresponding to mapper\_pages.py+reducer.py inspect results\_example\_reducer\_pages.txt
 
