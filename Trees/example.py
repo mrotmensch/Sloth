@@ -1,10 +1,10 @@
 import graphTree
 import os
 
-loadpath = 'json_1e-5_prAll.pk1'
+loadpath = '1e-5/json_1e-5_Dbetweenness.pk1'
 
-savepath_jsonfull = 'output.json'
-savepath_jsontendrils = 'tendrils'
+savepath_jsonfull = 'example_output.json'
+savepath_jsontendrils = 'example_tendrils'
 
 os.system('mkdir -p %s' % savepath_jsontendrils)
 
