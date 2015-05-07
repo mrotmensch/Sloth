@@ -1,0 +1,18 @@
+{
+    "children": [
+        {
+            "id": 11567020,
+            "name": "Columbia_University"
+        },
+        {
+            "id": 11567095,
+            "name": "University_of_California_Berkeley"
+        },
+        {
+            "id": 11567111,
+            "name": "University"
+        }
+    ],
+    "id": 11567139,
+    "name": "Harvard_University"
+}

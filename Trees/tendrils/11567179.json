@@ -1,0 +1,40 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "id": 11567024,
+                    "name": "UTC+05:30"
+                },
+                {
+                    "id": 11567083,
+                    "name": "UTC\u221205:00"
+                }
+            ],
+            "id": 11567141,
+            "name": "UTC+03:00"
+        },
+        {
+            "children": [
+                {
+                    "id": 11567078,
+                    "name": "Arctic_Circle"
+                }
+            ],
+            "id": 11567161,
+            "name": "Meridian_(geography)"
+        },
+        {
+            "children": [
+                {
+                    "id": 11567110,
+                    "name": "Longitude"
+                }
+            ],
+            "id": 11567165,
+            "name": "Prime_meridian"
+        }
+    ],
+    "id": 11567179,
+    "name": "UTC+01:00"
+}

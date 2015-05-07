@@ -1,0 +1,22 @@
+{
+    "children": [
+        {
+            "id": 11567028,
+            "name": "Gene"
+        },
+        {
+            "id": 11567033,
+            "name": "Anatomical_Therapeutic_Chemical_Classification_System"
+        },
+        {
+            "id": 11567060,
+            "name": "Plant"
+        },
+        {
+            "id": 11567068,
+            "name": "Synonym_(taxonomy)"
+        }
+    ],
+    "id": 11567144,
+    "name": "PubMed"
+}

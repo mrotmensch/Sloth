@@ -1,0 +1,56 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "id": 11567127,
+                    "name": "Hyperlink"
+                },
+                {
+                    "id": 11567149,
+                    "name": "Library_of_Congress_Control_Number"
+                },
+                {
+                    "id": 11567157,
+                    "name": "Economics"
+                }
+            ],
+            "id": 11567172,
+            "name": "Virtual_International_Authority_File"
+        },
+        {
+            "children": [
+                {
+                    "id": 11567136,
+                    "name": "Village"
+                },
+                {
+                    "id": 11567147,
+                    "name": "Record_label"
+                },
+                {
+                    "id": 11567169,
+                    "name": "Civil_township"
+                }
+            ],
+            "id": 11567176,
+            "name": "Music_genre"
+        },
+        {
+            "children": [
+                {
+                    "id": 11567142,
+                    "name": "Latin"
+                },
+                {
+                    "id": 11567148,
+                    "name": "Chinese_language"
+                }
+            ],
+            "id": 11567180,
+            "name": "English_language"
+        }
+    ],
+    "id": 11567186,
+    "name": "Authority_control"
+}

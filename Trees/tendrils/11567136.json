@@ -1,0 +1,14 @@
+{
+    "children": [
+        {
+            "id": 11567016,
+            "name": "City"
+        },
+        {
+            "id": 11567045,
+            "name": "Powiat"
+        }
+    ],
+    "id": 11567136,
+    "name": "Village"
+}

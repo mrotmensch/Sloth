@@ -1,0 +1,86 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "id": 11567009,
+                    "name": "Drainage_basin"
+                },
+                {
+                    "id": 11567023,
+                    "name": "PubMed_Central"
+                },
+                {
+                    "id": 11567053,
+                    "name": "Bibcode"
+                },
+                {
+                    "id": 11567099,
+                    "name": "DMOZ"
+                }
+            ],
+            "id": 11567129,
+            "name": "PubMed_Identifier"
+        },
+        {
+            "children": [
+                {
+                    "id": 11567011,
+                    "name": "Chemical_formula"
+                },
+                {
+                    "id": 11567039,
+                    "name": "Physics"
+                },
+                {
+                    "id": 11567082,
+                    "name": "Computer_science"
+                },
+                {
+                    "id": 11567085,
+                    "name": "Geography"
+                },
+                {
+                    "id": 11567088,
+                    "name": "Gold"
+                }
+            ],
+            "id": 11567131,
+            "name": "Mathematics"
+        },
+        {
+            "children": [
+                {
+                    "id": 11567028,
+                    "name": "Gene"
+                },
+                {
+                    "id": 11567033,
+                    "name": "Anatomical_Therapeutic_Chemical_Classification_System"
+                },
+                {
+                    "id": 11567060,
+                    "name": "Plant"
+                },
+                {
+                    "id": 11567068,
+                    "name": "Synonym_(taxonomy)"
+                }
+            ],
+            "id": 11567144,
+            "name": "PubMed"
+        },
+        {
+            "children": [
+                {
+                    "id": 11567066,
+                    "name": "Arthropod"
+                }
+            ],
+            "id": 11567159,
+            "name": "Animal"
+        }
+    ],
+    "id": 11567174,
+    "name": "Binomial_nomenclature"
+}

@@ -1,0 +1,30 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "id": 11567173,
+                    "name": "International_Organization_for_Standardization"
+                }
+            ],
+            "id": 11567187,
+            "name": "International_Standard_Name_Identifier"
+        },
+        {
+            "children": [
+                {
+                    "id": 11567183,
+                    "name": "ISO_3166"
+                },
+                {
+                    "id": 11567184,
+                    "name": "International_Standard_Serial_Number"
+                }
+            ],
+            "id": 11567190,
+            "name": "Digital_object_identifier"
+        }
+    ],
+    "id": 11567192,
+    "name": "International_Standard_Book_Number"
+}
