@@ -19,6 +19,9 @@ class graphTree():
 	json_full = None
 	json_tendrils = None
 
+	_indent = None
+	_separators = None
+
 	def __init__(self,loadpath,indent=4,separators=(',', ': ')):
 		full,tendrils = utils.pickleLoad(loadpath)
 		
@@ -31,6 +34,8 @@ class graphTree():
 			json_tendrils[k] = json.dumps(v,sort_keys=True, indent=indent, separators=separators)
 
 		self.json_tendrils = json_tendrils
+		self._indent = indent
+		self._separators = separators
 
 	def tofile_full(self,savepath):
 		'''
@@ -61,7 +66,39 @@ class graphTree():
 				f.write(v)
 				f.flush()
 
+	def regenerateTendrils(self,limit=2):
+		'''
+		limit = max depth of tendrils
+		returns tendrils, json_tendrils
+		saves tendrils to self
+		'''
 
+		def regenerateTendrils_(dict_tree,tendrils={},limit=2):
+			def searchStubs(dict_tree,depth=0,limit=2):
+				myid = dict_tree['id']
+				mylabel = dict_tree['name']
+				d = {}
+				d['id'] = myid
+				d['name'] = mylabel
+				if 'children' in dict_tree.keys() and depth < limit:
+					d['children'] = []
+					for child in dict_tree['children']:
+						d['children'].append(searchStubs(child,depth=depth+1,limit=limit))
+				return d
+
+			myid = dict_tree['id']
+			tendrils[myid] = searchStubs(dict_tree,depth=0,limit=limit)
+			if 'children' in dict_tree.keys():
+				for child in dict_tree['children']:
+					regenerateTendrils_(child,tendrils,limit)
+		tendrils = {}
+		regenerateTendrils_(self.full,tendrils,limit)
+		self.tendrils = tendrils
+		json_tendrils = {}
+		for k,v in tendrils.iteritems():
+			json_tendrils[k] = json.dumps(v,sort_keys=True, indent=self._indent, separators=self._separators)
+		self.json_tendrils = json_tendrils
+		return tendrils, json_tendrils
 
 
 

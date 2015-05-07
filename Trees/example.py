@@ -10,5 +10,7 @@ os.system('mkdir -p %s' % savepath_jsontendrils)
 
 tree = graphTree.graphTree(loadpath)
 
+tendrils,json_tendrils = tree.regenerateTendrils(limit=2)
+
 tree.tofile_full(savepath_jsonfull)
 tree.tofile_tendrils(savepath_jsontendrils)
