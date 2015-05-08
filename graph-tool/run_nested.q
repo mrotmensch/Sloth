@@ -1,8 +1,8 @@
 #!/bin/bash
-#PBS -l nodes=1:ppn=1
-#PBS -l walltime=40:00:00
-#PBS -l mem=92GB
-#PBS -N nested_U_5e-7
+#PBS -l nodes=1:ppn=32
+#PBS -l walltime=150:00:00
+#PBS -l mem=999GB
+#PBS -N nested_0U_32ppn
 #PBS -M justinmaojones@nyu.edu
 #PBS -j oe
 
@@ -16,4 +16,4 @@ module load graph-tool/gnu/2.2.42
 SOURCEDIR=$HOME/Sloth/graph-tool
 cd $SOURCEDIR
 
-python generateNestedBlockModel_D.py '5e-7'
+python generateNestedBlockModel.py '0U'
