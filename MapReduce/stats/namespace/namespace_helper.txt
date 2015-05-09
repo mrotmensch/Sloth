@@ -1,0 +1,30 @@
+# Decoding of namespace. obtained from http://en.wikipedia.org/wiki/Wikipedia:Namespace
+0:Article
+1:Talk
+2:User
+3:User talk
+4:Wikipedia
+5:Wikipedia talk
+6:File
+7:File talk
+8:MediaWiki
+9:MediaWili talk
+10:Template
+11:Template talk
+12:Help
+13:Help talk
+14:Category
+15:Category talk
+100:Portal
+101:Portal talk
+108:Book
+109:Book talk
+118:Draft
+119:Draft talk
+446:Education Program
+447:Education Program talk
+710:TimesText
+711:TimesText talk
+828:Module
+829:Module talk
+2600:Topic
