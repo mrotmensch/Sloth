@@ -16,7 +16,7 @@ def data():
 def trapClick():
     clickName = request.args.get('target', 'empty', type=str)
 
-    return jsonify(result = clickName + clickName[::-1])
+    return jsonify(result = clickName)
 
 if __name__ == "__main__":
     app.run(debug=True)
