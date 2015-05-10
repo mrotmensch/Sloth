@@ -1,4 +1,4 @@
-# Deploying Web Demo on AWS Elastic Beanstalk
+# Deploying WebDemo on AWS Elastic Beanstalk
 
 ## Download AWS Elastic Beanstalk Command Line Tool
 
@@ -29,7 +29,7 @@ Start Elastic Beanstalk
 eb init
 ```
 
-Answer all the questions and select your options. When complete, start Elastic Beanstalk
+Answer all the questions and select your options. When complete, start Elastic Beanstalk.
 
 ```sh
 eb start
