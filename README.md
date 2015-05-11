@@ -4,10 +4,9 @@
 
 
 Brought to you by The Sloth Collective:
-
-    * Peter Li,
-    * Justin Mao-Jones,
-    * Maya Rotmensch.
+Peter Li,
+Justin Mao-Jones,
+Maya Rotmensch.
 
 ## Introduction
 
