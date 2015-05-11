@@ -1,7 +1,7 @@
 
 # MapReduce for cleaning Wikipedia data
 
-Programs in this folder are the first step in the MapReduce pipeline for dataprocessing.
+Programs in this folder are the first step in the MapReduce pipeline for data processing.
 
 To clean the data of links between articles use mapper\_pagelinks.py as the mapper and reducer.py as the reducer.
 To clean the data on each invididual pages use the mapper\_pages.py as the mapper and reducer.py as the reducer.

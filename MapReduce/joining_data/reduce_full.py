@@ -36,7 +36,7 @@ for line in sys.stdin:
                     for j in page_val:
                         print "%s\t%s" %(i, j)
              
-        #reset defaults
+        # reset defaults
         page_val = []
         links_val = []
 

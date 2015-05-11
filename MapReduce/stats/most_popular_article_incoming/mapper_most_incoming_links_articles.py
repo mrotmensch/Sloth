@@ -1,5 +1,11 @@
 #!/usr/bin/python
 
+#######################################################################
+#                                                                     #
+# mapper a program detecting top 3 articles with most ingoing links  #
+#                                                                     #
+#######################################################################
+
 import sys
 import string
 import os
