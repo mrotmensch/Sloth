@@ -1,15 +1,9 @@
 # MapReduce for Wikipedia namespace statistics
 
+The programs in this folder are step 4 of the data processing pipeline. 
+The step can re run seperately from the graph analysis.
 
-1.  Mapper is mapper\_full.py
-2.  Reducer is reducer.py
-3.  Mapper and reducer can be run locally with sample file input\_sample.txt
-3.  Results obtained on AWS are saved locally as 'results' and on S3 here: https://s3.amazonaws.com/mayar/Stats/namepace\_hist\_output/part-00000
-4. namespace\_helper.txt is a decoder for namespace from id to name.
-5. visual.py is a script that should be run locally to visualize the histogram of pages per namespace.
-6. The results of visual.py are saved in "Histogram of pages per namespace (logged).png"
-
-
-On AWS you can find the mapper and reducer here: 
-mapper: https://s3.amazonaws.com/mayar/Stats/namespace\_hist/map\_full.py
-reducer: https://s3.amazonaws.com/mayar/Stats/namespace\_hist/reducer.py
+1. The folder most\_popular\_article\_incoming contains a program that calculated the top 3 most linked-to articles (uses only the articles namespace).
+2. The folder most\_popular\_incoming contains a program that calculated the top 3 most linked-to pages (across all namespaces)
+3. The folder most\_popular\_article\_outgoing contains a program that calculated the top 3 articles with the most outgoing links(uses only the articles namespace).
+4. The folder most\_popular\_outgoing contains a program that calculated the top 3 pages with the most outgoing links (across all namespaces).

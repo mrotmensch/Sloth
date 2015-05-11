@@ -21,7 +21,10 @@ Example of local run command:
 3. choose choose output folder name (that does not already exist).
 4. run the following Jar:
 
-    -D mapreduce.job.reduces=1 -files s3://PATH\_TO/map\_full.py,s3://PATH\_TO/reducer.py -mapper map\_full.py -reducer reducer.py -input s3://mayar/JUSTIN/full\_data/decoder -output s3://PATH\_TO\_OUTPUT
+    -D mapreduce.job.reduces=1 -files s3://PATH_TO/map_full.py,s3://PATH_TO/reducer.py -mapper map_full.py -reducer reducer.py -input s3://mayar/JUSTIN/full_data/decoder -output s3://PATH_TO_OUTPUT
+
+# to examine the results of our run see:
+    https://s3.amazonaws.com/mayar/decoder_cleaning/DECODER/part-00000    
 
 
 

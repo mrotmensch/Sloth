@@ -3,8 +3,15 @@
 import sys
 import bisect
 
+#######################################################################
+#                                                                     #
+# reducer a program detecting top 3 articles with most outgoing links  #
+#                                                                     #
+#######################################################################
+
 # since we only care about top 3, we make sure to only save those rather than the counts of the entire title list to avoid running out of memory.
-#operating under the assumption that there aren't many pages with the exact same number of incoming links.
+# operating under the assumption that there aren't many very popular pages with the exact same number of incoming links, 
+# therefore we do not deal with tie breaking!
 
 
 current_ID = None
