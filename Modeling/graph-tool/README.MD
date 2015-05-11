@@ -14,10 +14,10 @@ Executing the following commands will load the graph, purge it, generate the sto
 
 	python loadgraph.py
 	python purge.py '5e-5'  # purges the graph at the PageRank 5e-5 threhold.  This can be adjusted, e.g. 1e-5.
-	python generateNestedBlockModel.py '5e-5D'  # generates the nested block model using the graph purged at 5e-5 level.
+	python generateNestedBlockModel.py '5e-5D'  # generates the nested block model using the directed graph purged at 5e-5 level.  5e-5U would result in the same thing, but on an undirected graph.
 
 The output of these scripts will be saved to `../graphs`.  Finally, run the following command to generate the hierarchy tree in JSON format.
 
-	python generateTree.py '5e-5D'  # generates the hierarchy tree in JSON format at the 5e-5 level.
+	python generateTree.py '5e-5D'  # generates the hierarchy tree in JSON format at the 5e-5 level using a directed graph.
 
 The tree output will be found in `../trees`.
