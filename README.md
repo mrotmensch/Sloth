@@ -19,6 +19,7 @@ For our project, we examine the Wikipedia graph and its community structure. We 
 ## Project Makeup
 
 The project is made up of three main parts:
+
 1. Data Processing with MapReduce (available in the MapReduce folder)
 2. Modeling of the link graph (available in the modeling folder )
 3. A D3 visualization of the processed graph (available in the Visualiation folder)
