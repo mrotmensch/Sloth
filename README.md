@@ -1,11 +1,12 @@
-## Sloth
-Final Project for Big Data Class
+# Hierarchical Clustering and Visualization of  Wikipedia
+
+(Final Project for Big Data Class)
 
 
-By:
-Peter Li,
-Justin Mao-Jones,
-Maya Rotmensch.
+Brought to you by The Sloth Collective:
+    * Peter Li,
+    * Justin Mao-Jones,
+    * Maya Rotmensch.
 
 ## Introduction
 
@@ -27,5 +28,5 @@ The project is made up of three main parts:
 To run the project and reproduce our results please visit each folder in the order they are numbered above and follow individual instructions available in the READMEs.
 
 
-## If you want to jump straight to the cool visualization, please follow the link directly to the interactive demo:
+### If you want to jump straight to the cool visualization, please follow the link directly to the interactive demo:
  http://slothbigdatademo-env-vvjkvbvppp.elasticbeanstalk.com/ 
