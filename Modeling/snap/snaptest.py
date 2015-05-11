@@ -15,11 +15,7 @@ with open(filename+'.txt','w+') as f:
     start = time.time()
     UGraph = snap.GenRndGnm(snap.PUNGraph, nodes, edges)
     CmtyV = snap.TCnComV()
-    modularity = snap.CommunityCNM(UGraph, CmtyV)
-    #for Cmty in CmtyV:
-    #    print "Community: "
-    #    for NI in Cmty:
-    #        print NI
+    modularity = snap.CommunityGirvanNewman(UGraph, CmtyV)
     f.write("The modularity of the network is %f\n" % modularity)
 
     end = time.time()
