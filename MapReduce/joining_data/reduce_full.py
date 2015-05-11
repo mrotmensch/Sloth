@@ -1,5 +1,11 @@
 #!/usr/bin/python
 
+##############################################################################################
+#  reduce_full.py                                                                            #
+#  This program deals with the merging of the parsed Pagelinks and Pages files.              #
+#                                                                                            #
+##############################################################################################
+
 import sys
 
 current_key = None
@@ -13,8 +19,8 @@ for line in sys.stdin:
     keys, temp = line.strip().split("\t")
     file_name, vals = temp.strip().split("|")
 
-    #vals = vals.split("YitongWang")
- 
+    
+    # determine which file the tuple came from and append values.
     if current_key == keys:
         if file_name == "links":
             links_val.append(vals)
@@ -24,10 +30,10 @@ for line in sys.stdin:
 
     else:
         if current_key:
+            # if tuples from both files exist, emit combinations
             if (len(links_val)>0) and (len(page_val)>0):
                 for i in links_val:
                     for j in page_val:
-                        #combined = i+ j # links_val+page_val. from_id + to_id
                         print "%s\t%s" %(i, j)
              
         #reset defaults
@@ -45,8 +51,6 @@ for line in sys.stdin:
 if (len(links_val)>0) and (len(page_val)>0):
     for i in links_val:
         for j in page_val:
-            #combined = i+ j # trips_val+fares_val
-            #print "%s\t%s" %(current_key, combined)
             print "%s\t%s" %(i, j)
 
 
