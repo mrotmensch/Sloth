@@ -11,5 +11,6 @@
 
 
 On AWS you can find the mapper and reducer here: 
-mapper: https://s3.amazonaws.com/mayar/Stats/namespace_hist/map_full.py
-reducer: https://s3.amazonaws.com/mayar/Stats/namespace_hist/reducer.py
+
+* mapper: https://s3.amazonaws.com/mayar/Stats/namespace_hist/map_full.py
+* reducer: https://s3.amazonaws.com/mayar/Stats/namespace_hist/reducer.py
