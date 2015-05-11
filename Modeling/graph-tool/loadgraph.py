@@ -9,15 +9,15 @@ g = gt.Graph(directed=True)
 
 start = time.time()
 
-GRAPHNAME = 'graph14_int32_pass'
+GRAPHNAME = 'graph'
 
 vertex_map={}
 
 label_map=g.new_vertex_property('string')
 nodeid_map=g.new_vertex_property('int32_t')
 
-nodefilename = "/scratch/jmj418/Sloth/nodes.txt"
-edgefilename = "/scratch/jmj418/Sloth/edges.txt"
+nodefilename = "../graphs/nodes.txt"
+edgefilename = "../graphs/edges.txt"
 
 missing_nodes = set()
 

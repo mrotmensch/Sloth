@@ -13,13 +13,13 @@ threshold_str = args.threshold[0]
 
 threshold = float(threshold_str)
 
-loadfilename = 'graph14_pagerank'
+loadfilename = 'graph_pagerank'
 savefilename = loadfilename+'_purge_'+threshold_str
 
 print 'loadfile = %s' % loadfilename
 print 'savefile = %s' % savefilename
 
-path = '/scratch/jmj418/Sloth'
+path = '../graphs'
 loadpath = os.path.join(path,loadfilename+'.gt')
 savepath = os.path.join(path,savefilename+'.gt')
 
