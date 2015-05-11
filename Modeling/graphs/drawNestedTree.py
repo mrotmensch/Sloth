@@ -5,11 +5,17 @@ import sys
 sys.path.append('../misc')
 import utils
 
+import argparse
+parser = argparse.ArgumentParser(description='Select purge threshold.')
+parser.add_argument('threshold', metavar='N', type=str, nargs='+',
+                   help='option number')
 
-threshold = '5e-5'
+args = parser.parse_args()
+myfile = args.threshold[0]
 
 # nested block model
-state = utils.pickleLoad('graph14_pagerank_purge_%s_nested.pk1' % threshold)
+#state = utils.pickleLoad('graph_pagerank_purge_%s_nested.pk1' % threshold)
+state = utils.pickleLoad(myfile)
 
 # underlying graph
 g = state.g
