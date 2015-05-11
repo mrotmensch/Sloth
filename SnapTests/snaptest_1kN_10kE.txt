@@ -1,4 +1,0 @@
-test: 1000 nodes 10000 edges
-The modularity of the network is 0.188365
-time to complete = 0 hrs 0 min 0 sec
-time=0.33

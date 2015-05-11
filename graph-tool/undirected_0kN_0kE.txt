@@ -1,3 +1,0 @@
-test: 100 nodes 520 edges
-time to complete = 0 hrs 0 min 0 sec
-time=0.49

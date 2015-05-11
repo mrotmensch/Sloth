@@ -1,0 +1,21 @@
+#!/bin/bash
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=10:00:00
+#PBS -l mem=189GB
+#PBS -N purge_1e-5
+#PBS -M justinmaojones@nyu.edu
+#PBS -j oe
+
+# load necessary modules
+
+module purge
+module load python/intel/2.7.6
+module load graph-tool/gnu/2.2.42
+
+# define location of working directory when the HPC gets going
+
+# run source code
+# location of the source code must be defined explicitly
+SOURCEDIR=$HOME/Sloth/graph-tool
+cd $SOURCEDIR
+python purge.py '1e-5'

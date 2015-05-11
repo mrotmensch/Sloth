@@ -1,0 +1,3 @@
+test: 10000000 nodes 100009316 edges
+time to complete = 0 hrs 13 min 20 sec
+time=800.08 seconds
