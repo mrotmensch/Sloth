@@ -1,19 +1,15 @@
-"pruned_.."    means that any nodes in the tree that contained only one child were collapsed.
+# Trees
 
-".._cropped"   means that the bottom layer of the tree (i.e. the actual articles) were chopped off.
+This folder contains the hierarchical trees output by models in the `../graph-tool` folder.  Please see [that folder](https://github.com/mrotmensch/Sloth/tree/master/Modeling/graph-tool) in the github repo for an explanation of the content.
+
+All tree outputs are contained in the folders '5e-5D','5e-5U', etc, where 5e-5 refers to the threshold and D/U refer to directed or undirected graph.  The files contain the following conventions:
+
+`pruned_..`    means that any nodes in the tree that contained only one child were collapsed.
+
+`.._cropped`   means that the bottom layer of the tree (i.e. the actual articles) were chopped off.
+
+Please see `example.py` for template on how to load and use trees.
 
 
-see example.py for template on how to load and use trees.
-
-
-| pagerank threshold | nodes | edges   |
-| ------------------ |:-----:|:-------:|
-| 5e-5               | 408   | 16,499  |
-| 1e-5               | 5,106 | 484,857 |
-| 5e-6               | 13,676| 1,516,816|
-| 1e-6               | 117,153 | 16,322,339|
-| 5e-7               | 263,621 | 36,626,586 |
-| 1e-7               | 1,506,661 | 197,025,405 |
-| Full graph         | 11,567,005  | 358,585,207 |
 
 
