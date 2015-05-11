@@ -8,7 +8,7 @@ If running this on NYU's HPC Mercer cluster, graph-tool has already been install
 	module load python/intel/2.7.6
 	module load graph-tool/gnu/2.2.42
 
-Before proceeding further, please make sure that the nodes.txt and edges.txt files have been generated according to XYZ.
+Before proceeding further, please make sure that the `nodes.txt` and `edges.txt` files have been generated according to the [MapReduce](https://github.com/mrotmensch/Sloth/tree/master/MapReduce/cleaning_stage) section and saved to `./graphs` with names `nodes.txt` and `edges.txt`.
 
 Executing the following commands will load the graph, purge it, generate the stochastic block model, and generate the hierarchy tree in JSON format.
 
