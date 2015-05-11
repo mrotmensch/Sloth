@@ -12,7 +12,7 @@
 #      3) sql tuples are of the following form:                                              #
 #      4) sometimes the csv parser parses that need not be parse.                            #
 #         so we need to check for such occurences and "re-merge" wrongly parsed portions.    #
-#      5) the whole mapper exists in a try except block because a single line of the file    #
+#      5) the whole mapper exists in a try except block because a couple of lines in the file#
 #         containing complex algebra notation cannot be parsed and raises and error.         #
 #         See report for error analysis                                                      #
 ##############################################################################################

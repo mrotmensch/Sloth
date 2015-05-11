@@ -32,8 +32,8 @@ for line in sys.stdin:
     #remove short lines that are sql metadata. All data lines are over tens of thousand of charecters long.
     try:
         if len(clean) >300: 
-
-            # We know that each tuple in sql starts and ends with paretheses. remove all irrelevant entries before this token.
+            
+        # We know that each tuple in sql starts and ends with paretheses. remove all irrelevant entries before this token.
 	    # find first occurence of '(' in line
             start_index = clean.find('(')
 	    # find last occurance of ')' in line
@@ -51,7 +51,7 @@ for line in sys.stdin:
 	    # prepare delimitaer for re-merging
             delim = ','
             delim2 = ''
-            step=4
+            step=4 # 4 expected elements in tuple
             start_counter = 0
             end_counter = step
             extra = 0
@@ -59,7 +59,7 @@ for line in sys.stdin:
 	    # cycle through parsed elements in a line.
             while end_counter < len(parsed_line):
                 
-                # if parsed format doesn't match expected format
+                # if parsed format doesn't match expected format, this means string was parse into smaller chunks than needed.
                 if parsed_line[end_counter-1][-1] ==')':
 
                     #get rid of extra commas that caused extra parsing and re-merge
