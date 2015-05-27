@@ -16,6 +16,7 @@ Like all encyclopaedia, Wikipedia is “a reference work that contains informati
 
 For our project, we examine the Wikipedia graph and its community structure. We propose a hierarchical community model built using a stochastic block model. Further, we develop an interactive visualization that allows users to interact with and explore the Wikipedia graph.
 
+[Final Report](https://github.com/mrotmensch/Sloth/blob/master/Digesting_Wikipedia.pdf)
 
 ## Project Makeup
 
